@@ -1,4 +1,5 @@
 import "./App2.css";
+import Product from "./Product";
 export default function App2() {
   const products = [
     { id: 1, name: "Product 1", price: 23 },
@@ -8,12 +9,13 @@ export default function App2() {
   return (
     <div>
       <h1>This is App2 component</h1>
+      <h2>Working with Arrays and Objects,Applying Styles</h2>
       <div className="App-Product-Container">
         {products.map((value) => (
-          <div className="App-Product-Box" key={value.id}>
-            <h3>{value.name}</h3>
-            <h4>{value.price}</h4>
-            <p><button>Add to Cart</button></p>
+          <div className="App-Product-Box">
+            <h2>{value.name}</h2>
+            <h3>{value.price}</h3>
+            <button>Add to Cart</button>
           </div>
         ))}
       </div>
