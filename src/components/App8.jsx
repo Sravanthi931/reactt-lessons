@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-
+import React from "react";
+import { useState } from "react";
 export default function App8() {
-  const [count, setCount] = useState(10); 
-
+  const [count, setCount] = useState(0);
   const increment = () => {
-    setCount(count + 1);
+    //setCount(count + 1);
+    setCount((prevCount) => prevCount + 1);
   };
-
-  const decrement = () => {
-    setCount(count - 1);
-  };
-
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <button onClick={decrement}>-</button>
-      <span style={{ margin: "0 20px", fontSize: "24px" }}>{count}</span>
-      <button onClick={increment}>+</button>
+    <div>
+      <h1>App8</h1>
+      <h2>useState Revision</h2>
+      <h3>{count}</h3>
+      <p>
+        <button onClick={increment}>Click</button>
+      </p>
     </div>
   );
 }
