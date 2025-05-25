@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 export default function App10() {
   const [products, setProducts] = useState([
-    { id: 1, name: "Product 1", price: 23 },
-    { id: 2, name: "Product 2", price: 45 },
+    { id: 1, name: "Apples", price: 23 },
+    { id: 2, name: "Mangoes", price: 45 },
   ]);
 
   const [cart, setCart] = useState([]);
