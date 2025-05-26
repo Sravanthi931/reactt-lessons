@@ -29,7 +29,7 @@ export default function App13() {
           </div>
         </div>
         <p>
-          <input type="number" onChange={(e) => setNum(Number(e.target.value))} />
+          
 
         </p>
         <div className="App13-Row">
